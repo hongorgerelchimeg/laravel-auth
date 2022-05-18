@@ -15,6 +15,16 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    <br>
+                    <a class="link" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();">
+                        {{ __('Logout') }}
+                    </a>
+                    <br>
+                    <a class="link" href="{{ route('admin.posts.index') }}">
+                        {{ __('Go to your Posts') }}
+                    </a>
                 </div>
             </div>
         </div>
