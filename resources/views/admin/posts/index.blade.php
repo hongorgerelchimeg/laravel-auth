@@ -2,7 +2,8 @@
 
 @section('pageTitle', 'Index')
 
-@section('pageContent')
+@section('content')
+{{-- {{dd($posts)}} --}}
     <div class="container">
         @if (session('deleted'))
             <div class="alert alert-warning">{{ session('deleted') }}</div>
